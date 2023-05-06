@@ -27,6 +27,7 @@
  */
 declare module '$env/static/private' {
 	export const MANPATH: string;
+	export const TERM_PROGRAM: string;
 	export const NODE: string;
 	export const INIT_CWD: string;
 	export const TERM: string;
@@ -35,8 +36,11 @@ declare module '$env/static/private' {
 	export const HOMEBREW_REPOSITORY: string;
 	export const TMPDIR: string;
 	export const npm_config_global_prefix: string;
+	export const TERM_PROGRAM_VERSION: string;
+	export const ZDOTDIR: string;
+	export const ORIGINAL_XDG_CURRENT_DESKTOP: string;
+	export const MallocNanoZone: string;
 	export const COLOR: string;
-	export const TERM_SESSION_ID: string;
 	export const npm_config_noproxy: string;
 	export const SDKMAN_PLATFORM: string;
 	export const npm_config_local_prefix: string;
@@ -52,12 +56,12 @@ declare module '$env/static/private' {
 	export const PAGER: string;
 	export const LSCOLORS: string;
 	export const PATH: string;
-	export const TERMINAL_EMULATOR: string;
 	export const npm_package_json: string;
 	export const npm_config_engine_strict: string;
 	export const _: string;
 	export const npm_config_userconfig: string;
 	export const npm_config_init_module: string;
+	export const USER_ZDOTDIR: string;
 	export const __CFBundleIdentifier: string;
 	export const npm_command: string;
 	export const PWD: string;
@@ -66,14 +70,18 @@ declare module '$env/static/private' {
 	export const npm_lifecycle_event: string;
 	export const EDITOR: string;
 	export const npm_package_name: string;
+	export const LANG: string;
 	export const SDKMAN_VERSION: string;
+	export const VSCODE_GIT_ASKPASS_EXTRA_ARGS: string;
 	export const XPC_FLAGS: string;
 	export const npm_config_node_gyp: string;
 	export const npm_package_version: string;
 	export const XPC_SERVICE_NAME: string;
+	export const VSCODE_INJECTION: string;
 	export const USE_GKE_GCLOUD_AUTH_PLUGIN: string;
 	export const SHLVL: string;
 	export const HOME: string;
+	export const VSCODE_GIT_ASKPASS_MAIN: string;
 	export const USER_GKE_CLOUD_AUTH_PLUGIN: string;
 	export const HOMEBREW_PREFIX: string;
 	export const npm_config_cache: string;
@@ -81,13 +89,16 @@ declare module '$env/static/private' {
 	export const LOGNAME: string;
 	export const npm_lifecycle_script: string;
 	export const SDKMAN_DIR: string;
-	export const LC_CTYPE: string;
+	export const VSCODE_GIT_IPC_HANDLE: string;
 	export const npm_config_user_agent: string;
+	export const VSCODE_GIT_ASKPASS_NODE: string;
+	export const GIT_ASKPASS: string;
 	export const INFOPATH: string;
 	export const HOMEBREW_CELLAR: string;
 	export const SDKMAN_CANDIDATES_DIR: string;
 	export const npm_node_execpath: string;
 	export const npm_config_prefix: string;
+	export const COLORTERM: string;
 	export const NODE_ENV: string;
 }
 
@@ -119,6 +130,7 @@ declare module '$env/static/public' {
 declare module '$env/dynamic/private' {
 	export const env: {
 		MANPATH: string;
+		TERM_PROGRAM: string;
 		NODE: string;
 		INIT_CWD: string;
 		TERM: string;
@@ -127,8 +139,11 @@ declare module '$env/dynamic/private' {
 		HOMEBREW_REPOSITORY: string;
 		TMPDIR: string;
 		npm_config_global_prefix: string;
+		TERM_PROGRAM_VERSION: string;
+		ZDOTDIR: string;
+		ORIGINAL_XDG_CURRENT_DESKTOP: string;
+		MallocNanoZone: string;
 		COLOR: string;
-		TERM_SESSION_ID: string;
 		npm_config_noproxy: string;
 		SDKMAN_PLATFORM: string;
 		npm_config_local_prefix: string;
@@ -144,12 +159,12 @@ declare module '$env/dynamic/private' {
 		PAGER: string;
 		LSCOLORS: string;
 		PATH: string;
-		TERMINAL_EMULATOR: string;
 		npm_package_json: string;
 		npm_config_engine_strict: string;
 		_: string;
 		npm_config_userconfig: string;
 		npm_config_init_module: string;
+		USER_ZDOTDIR: string;
 		__CFBundleIdentifier: string;
 		npm_command: string;
 		PWD: string;
@@ -158,14 +173,18 @@ declare module '$env/dynamic/private' {
 		npm_lifecycle_event: string;
 		EDITOR: string;
 		npm_package_name: string;
+		LANG: string;
 		SDKMAN_VERSION: string;
+		VSCODE_GIT_ASKPASS_EXTRA_ARGS: string;
 		XPC_FLAGS: string;
 		npm_config_node_gyp: string;
 		npm_package_version: string;
 		XPC_SERVICE_NAME: string;
+		VSCODE_INJECTION: string;
 		USE_GKE_GCLOUD_AUTH_PLUGIN: string;
 		SHLVL: string;
 		HOME: string;
+		VSCODE_GIT_ASKPASS_MAIN: string;
 		USER_GKE_CLOUD_AUTH_PLUGIN: string;
 		HOMEBREW_PREFIX: string;
 		npm_config_cache: string;
@@ -173,13 +192,16 @@ declare module '$env/dynamic/private' {
 		LOGNAME: string;
 		npm_lifecycle_script: string;
 		SDKMAN_DIR: string;
-		LC_CTYPE: string;
+		VSCODE_GIT_IPC_HANDLE: string;
 		npm_config_user_agent: string;
+		VSCODE_GIT_ASKPASS_NODE: string;
+		GIT_ASKPASS: string;
 		INFOPATH: string;
 		HOMEBREW_CELLAR: string;
 		SDKMAN_CANDIDATES_DIR: string;
 		npm_node_execpath: string;
 		npm_config_prefix: string;
+		COLORTERM: string;
 		NODE_ENV: string;
 		[key: `PUBLIC_${string}`]: undefined;
 		[key: string]: string | undefined;

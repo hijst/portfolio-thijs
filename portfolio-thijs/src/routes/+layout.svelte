@@ -5,6 +5,8 @@
 	import '@skeletonlabs/skeleton/styles/all.css';
 	// Most of your app wide CSS should be put in this file
 	import '../app.postcss';
+
+	import "../app.css";
 </script>
 
 <slot />
