@@ -10,8 +10,8 @@ export interface Post {
 export const posts = readable<Post[]>([
 	{
 		title: 'Welcome post (how I created this blog)',
-		slug: 'sveltekit-blog',
+		slug: 'welcome-post',
 		isPublished: true,
-		datePublished: new Date('2023-06-25'),
+		datePublished: new Date('2023-08-21'),
 	},
 ]);

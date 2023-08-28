@@ -18,7 +18,7 @@
 			</svelte:fragment>
 			<h3><a href='/'>Thijs Visser</a></h3>
 			<svelte:fragment slot="trail">
-				<LightSwitch/>
+				<LightSwitch fillDark="fill-surface-900" fillLight='fill-surface-50'/>
 			</svelte:fragment>
 		</AppBar>
 	</svelte:fragment>
@@ -28,6 +28,15 @@
 	<!-- Router Slot -->
 	<slot />
 	<!-- ---- / ---- -->
-	<svelte:fragment slot="pageFooter"></svelte:fragment>
-	<svelte:fragment slot="footer"></svelte:fragment>
+	<svelte:fragment slot="pageFooter">
+	</svelte:fragment>
+	<svelte:fragment slot="footer">
+		<div class='w-[50%] ml-auto mr-auto'>
+		<hr />
+			<a href="https://www.linkedin.com/in/thijs-visser-9b3721167/" target="_blank" rel="noopener noreferrer">
+				<img src='/img/iconmonstr-linkedin-3.svg' alt='LinkedIn' class='ml-auto mr-auto w-50px h-50px dark:invert mb-5 mt-5'/>
+			</a>
+		</div>
+	</svelte:fragment>
+
 </AppShell>
