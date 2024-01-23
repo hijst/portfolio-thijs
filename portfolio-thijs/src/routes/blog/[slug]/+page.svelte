@@ -13,8 +13,8 @@
 </script>
 {#if currentPost?.isPublished}
 	<div class='justify-center items-center'>
-		<div class='w-[50%] ml-auto mr-auto pt-10 pb-20'>
-			<h1>{currentPost?.title}</h1>
+		<div class='md:min-w-[768px] md:w-1/2 mx-auto pt-10 pb-20 pl-4 pr-4'>
+			<h1 class='pb-2'>{currentPost?.title}</h1>
 			<p>Posted on {DateTime.fromJSDate(currentPost?.datePublished).toLocaleString(DateTime.DATE_MED)}
 				• {(data.post.split(" ").length / 240).toFixed(0)} minute read</p>
 			{@html data.post}

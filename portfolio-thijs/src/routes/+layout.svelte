@@ -36,7 +36,7 @@
 				<div class='flex justify-center space-x-5'>
 				<a href='https://www.linkedin.com/in/thijs-visser-9b3721167/' target='_blank' rel='noopener noreferrer'>
 					<img src='/img/iconmonstr-linkedin-3.svg' alt='LinkedIn'
-							 class='ml-auto mr-auto w-50px h-50px dark:invert mb-5 mt-5' />
+							 class='w-50px h-50px dark:invert mb-5 mt-5' />
 				</a>
 				<a href='https://github.com/hijst' target='_blank' rel='noopener noreferrer'>
 					<img src='/img/github-mark.svg' alt='GitHub'
