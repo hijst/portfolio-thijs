@@ -18,7 +18,7 @@
 			</svelte:fragment>
 			<h3><a href='/'>Thijs Visser</a></h3>
 			<svelte:fragment slot='trail'>
-				<LightSwitch fillDark='fill-surface-900' fillLight='fill-surface-50' />
+				<LightSwitch fillDark='fill-surface-900' fillLight='fill-surface-50'/>
 			</svelte:fragment>
 		</AppBar>
 	</svelte:fragment>

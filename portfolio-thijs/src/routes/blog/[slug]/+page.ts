@@ -9,12 +9,16 @@ export const load: PageLoad = async ({ fetch, params }) => {
 	}
 
 	const renderer = new marked.Renderer();
+	renderer.heading = (text, level) => {
+		return `\n<h${level}>${text}</h${level}>\n<br/>\n`
+	}
 	renderer.paragraph = (text) => {
-		return `\n<p>${text}</p>\n<br>\n`; // Add extra whitespace after each paragraph
+		return `\n<p>${text}</p>\n<br/>\n`; // Add extra whitespace after each paragraph
 	};
 
 	marked.use({
-		gfm: true
+		gfm: true,
+		breaks: false
 	});
 
 	const post = await res.text();
