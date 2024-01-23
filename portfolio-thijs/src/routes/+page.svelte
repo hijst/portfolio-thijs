@@ -28,7 +28,7 @@
 </div>
 
 
-<div class='ml-auto mr-auto pt-10 pb-20 max-w-[800px]'>
+<div class='pl-5 pr-5 ml-auto mr-auto pt-10 pb-20 max-w-[800px]'>
 
 	{#if latestPost}
 		<h1>Latest blog post</h1>
