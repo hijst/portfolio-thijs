@@ -19,7 +19,7 @@
 			<div>
 				<img
 					src='https://media.licdn.com/dms/image/D4E03AQEw3P7Apsdx7Q/profile-displayphoto-shrink_800_800/0/1700569439390?e=1711584000&v=beta&t=uQWezz6M_c0MEM7_rnqF8pUzgP9HiKLcEyuZeODmCSo'
-					alt='Avatar' class='rounded-full w-1/6 h-1/6 border-2 border-black dark:border-white mt-10 ml-auto mr-auto'>
+					alt='Avatar' class='rounded-full w-36 h-36 border-2 border-black dark:border-white mt-10 ml-auto mr-auto'>
 			</div>
 
 			<p class='mt-10'>I am a software engineer working at bol.</p>
