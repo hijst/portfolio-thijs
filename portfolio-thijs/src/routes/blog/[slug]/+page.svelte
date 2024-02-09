@@ -8,15 +8,16 @@
 		post: string;
 	};
 
-	let currentPost = $posts.find(post => post.slug = data.slug);
-
+	let postMetadata = $posts.find(p => p.slug === data.slug);
 </script>
-{#if currentPost?.isPublished}
+
+{#if postMetadata?.isPublished}
 	<div class='justify-center items-center'>
 		<div class='md:min-w-[768px] md:w-1/2 mx-auto pt-10 pb-20 pl-4 pr-4'>
-			<h1 class='pb-2'>{currentPost?.title}</h1>
-			<p>Posted on {DateTime.fromJSDate(currentPost?.datePublished).toLocaleString(DateTime.DATE_MED)}
+			<h1 class='pb-2'>{postMetadata?.title}</h1>
+			<p>Posted on {postMetadata?.datePublished}
 				• {(data.post.split(" ").length / 240).toFixed(0)} minute read</p>
+			<br />
 			{@html data.post}
 		</div>
 	</div>
