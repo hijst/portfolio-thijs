@@ -1,5 +1,3 @@
-title: how I created this post
----
 Hi there, welcome to my first blog on [thijsvisser.dev](https://www.thijsvisser.dev)!
 On here, I plan to
 blog about software engineering, tech, career, and who knows: maybe some of my personal interests besides code?
