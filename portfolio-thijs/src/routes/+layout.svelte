@@ -14,9 +14,12 @@
 	<svelte:fragment slot='header'>
 		<AppBar gridColumns='grid-cols-3' slotDefault='place-self-center' slotTrail='place-content-end' class='w-full'>
 			<svelte:fragment slot='lead'>
+				<div class='space-x-0.5'>
 				<a href='/blog'>blog</a>
+				<a href='/about'>about</a>
+				</div>
 			</svelte:fragment>
-			<h3><a href='/'>Thijs Visser</a></h3>
+			<h3 class='whitespace-nowrap'><a href='/'>Thijs Visser</a></h3>
 			<svelte:fragment slot='trail'>
 				<LightSwitch fillDark='fill-surface-900' fillLight='fill-surface-50'/>
 			</svelte:fragment>

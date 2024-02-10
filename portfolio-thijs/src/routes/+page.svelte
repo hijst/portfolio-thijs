@@ -18,7 +18,7 @@
 			<div>
 				<img
 					src='https://media.licdn.com/dms/image/D4E03AQEw3P7Apsdx7Q/profile-displayphoto-shrink_800_800/0/1700569439390?e=1711584000&v=beta&t=uQWezz6M_c0MEM7_rnqF8pUzgP9HiKLcEyuZeODmCSo'
-					alt='Avatar' id='avatar' class='rounded-full w-36 h-36 border-2 border-black dark:border-white mt-10 ml-auto mr-auto shadow-ava dark:shadow-avad'>
+					alt='Avatar' class='rounded-full w-36 h-36 border-2 border-black dark:border-white mt-10 ml-auto mr-auto shadow-ava dark:shadow-avad'>
 			</div>
 
 			<p class='mt-10'>I am a software engineer working at bol.</p>
@@ -43,14 +43,3 @@
 	{/if}
 	<hr />
 </div>
-
-<style>
-	#avatar {
-      transition: transform 0.5s ease, box-shadow 0.5s ease;
-	}
-
-	#avatar:hover {
-      transform: translateY(5px);
-      box-shadow: 0 0 0 rgba(0, 0, 0, 0.4);
-	}
-</style>
